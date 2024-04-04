@@ -1,0 +1,90 @@
+<!-- {% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'predictt/myfirst.css' %}">
+	<title>Image Upload and Display</title>
+</head>
+<body>
+	<div class="main">
+	<div class="container">
+		<div class="display-container">
+			<img id="image-preview">
+		</div>
+		<div class="upload-container">
+			<div class="upload">
+				<p>Drag files here or
+			  <form action="checkleaf" method="POST">
+				  <label for="image-upload">Browse</label>
+				  <input type="file" id="image-upload" name="image"></p>
+				  <<button type="submit">Upload</button> 
+			  </div>
+			  <div class="uploaded uploaded--one">
+				<i class="far fa-file-pdf"></i>
+				<div class="file">
+				  <div class="file__name">
+					<p id="id01">lorem_ipsum.pdf</p>
+					<i class="fas fa-times"></i>
+				  </div>
+		  <!- <form>
+			  <label for="image-upload">Select an image:</label>
+			  <input type="file" id="image-upload">
+			  <button type="submit">Upload</button>
+		  </form> 
+				  </div>
+			  </div>
+			  <div class="center">
+				<button type="submit">Upload</button>
+				</div>
+			</form>
+			<!- <h1>Upload an Image</h1>
+			<label for="image-upload">
+				Select an image
+				<input type="file" id="image-upload">
+			</label>
+		</div> 
+	</div>
+<!- </div> 
+	<!- <div id="detail" class="details">
+		<h1 id="id02"></h1>
+		gfh
+		fghfg
+		fghgf<br>
+		dfdfgfdgdfgdfg<br>hgg
+</div> 
+</div>
+</div>
+	<script>
+		const imageUpload = document.getElementById('image-upload');
+		const imagePreview = document.getElementById('image-preview');
+
+		imageUpload.addEventListener('change', function() {
+			const file = this.files[0];
+			const element = document.getElementById("id01");
+			element.innerHTML = file.name;
+
+			if (file) {
+				const reader = new FileReader();
+
+				reader.addEventListener('load', function() {
+					imagePreview.setAttribute('src', this.result);
+				});
+
+				reader.readAsDataURL(file);
+			}
+		});
+	</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1> {{ name }} </h1>
+</body>
+</html>
